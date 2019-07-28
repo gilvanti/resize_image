@@ -1,4 +1,3 @@
 *.pyc
 db.sqlite3
-uploaded_media/*
 __pycache__/
