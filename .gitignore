@@ -1,4 +1,4 @@
 *.pyc
 db.sqlite3
 __pycache__/
-uploaded_media/
+uploaded_media/*
