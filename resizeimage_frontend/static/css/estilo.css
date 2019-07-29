@@ -1,0 +1,18 @@
+.jumbotron{
+	font-family: "Segoe UI", "Tahoma", sans-serif;
+	background-color: #B8C3D4;
+	height: 100%;
+	margin: 0 auto;
+}
+.footer-bottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #1b1b1b;
+  text-align: center;
+}
+body{
+    background: url(../images/background.png) no-repeat fixed center top;
+}
