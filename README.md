@@ -15,7 +15,7 @@ Outro procedimento que realizei é configurar seu usuário para executar os coma
 
 https://luizsouza.com.br/2018/11/01/docker-sem-sudo-no-ubuntu-18-04/
 
-Após estás etapas vamos gerar nossas imagens docker, isto mesmo imagens, pois temos um app que se comunica com um worker celery e um broker rabbitmq, vá até a raiz do diretório criado ao fazer o clone do projeto e execute o comando abaixo:
+Após estás etapas vamos gerar nossas imagens docker, pois temos um app que se comunica com um worker celery e um broker rabbitmq, vá até a raiz do diretório criado ao fazer o clone do projeto e execute o comando abaixo:
 ```shell
 docker-compose up
 ```
