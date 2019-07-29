@@ -19,3 +19,34 @@ Após estás etapas vamos gerar nossas imagens docker, pois temos um app que se 
 ```shell
 docker-compose up
 ```
+
+Agora vamos verificar se os conteiner estão ativo, execute o seguinte comando:
+```shell
+docker ps
+```
+
+Voce terá um retorno parecido com isto:
+
+![Screenshot](resizeimage_frontend/static/images/readme/01.png)
+
+Agora vamos acessar o conteiner para executar as migrações:
+```shell
+docker exec -it resize_image_python_1 /bin/bash
+```
+
+Voce terá um retorno parecido com isto:
+
+![Screenshot](resizeimage_frontend/static/images/readme/02.png)
+
+Observe que pegamos apenas o connteiner de nome "resize_image_python_1", pois é nele onde iremos gerar as migrações. Após estarmos dentro do conteiner iremos executar 3 etapas descritas abaixo:
+```shell
+./manage.py makemigratons
+./manage.py migrate
+./manage.py ceratesuperuser
+```
+
+Voce terá um retorno parecido com isto:
+
+![Screenshot](resizeimage_frontend/static/images/readme/03.png)
+
+Quando ao criar o usuário será solicitado login, email e senha. Após isto podemos acessar o http://localhost:8000 e começar a utilizar o app.
